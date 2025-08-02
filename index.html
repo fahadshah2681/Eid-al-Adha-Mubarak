@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Amiri', serif;
-            background: linear-gradient(135deg, #0c3b2e 0%, #1a5d38 50%, #0c3b2e 100%);
+            background: linear-gradient(135deg,rgb(26, 40, 168) 0%,rgb(78, 61, 233) 50%, #2deb2d 100%);
             color: #fff;
             min-height: 100vh;
             overflow-x: hidden;
@@ -62,36 +62,32 @@
             animation: fadeInDown 1s ease;
         }
 
-        /* INCREASED IMAGE CONTAINER SIZE */
         .eid-image-container {
             position: relative;
-            width: 550px; /* Increased from 400px */
-            height: 550px; /* Increased from 400px */
-            margin: 0 auto 40px; /* Increased margin */
+            width: 540px;
+            height: 400px;
+            margin: 0 auto 40px;
             border-radius: 20px;
             overflow: hidden;
-            border: 10px solid rgba(255, 215, 0, 0.5); /* Thicker border */
+            border: 10px solid rgba(255, 215, 0, 0.5);
             box-shadow: 0 0 80px rgba(255, 215, 0, 0.8),
                         inset 0 0 50px rgba(255, 215, 0, 0.4);
             animation: pulse 3s infinite, glow 4s infinite alternate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .eid-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
             display: block;
-            filter: brightness(1.1) contrast(1.05);
-            transition: transform 0.5s ease;
-        }
-
-        .eid-image-container:hover .eid-image {
-            transform: scale(1.05);
         }
 
         h1 {
             font-family: 'Great Vibes', cursive;
-            font-size: 6rem; /* Increased from 5rem */
+            font-size: 5rem;
             color: #ffd700;
             text-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
             margin-bottom: 20px;
@@ -100,9 +96,9 @@
         }
 
         .subtitle {
-            font-size: 2rem; /* Increased from 1.8rem */
-            max-width: 800px; /* Increased width */
-            margin: 0 auto 40px; /* Increased margin */
+            font-size: 1.8rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
             color: #e6e6e6;
             text-shadow: 0 5px 10px rgba(0,0,0,0.5);
             animation: fadeIn 2s ease;
@@ -117,9 +113,9 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
                         inset 0 0 20px rgba(255, 255, 255, 0.15);
-            padding: 50px; /* Increased padding */
-            margin: 30px auto; /* Increased margin */
-            max-width: 900px; /* Increased max-width */
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 800px;
             transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
@@ -133,31 +129,31 @@
         }
 
         .form-group {
-            margin-bottom: 30px; /* Increased margin */
+            margin-bottom: 30px;
         }
 
         label {
             display: block;
-            margin-bottom: 15px; /* Increased margin */
-            font-size: 1.4rem; /* Slightly larger */
+            margin-bottom: 15px;
+            font-size: 1.4rem;
             color: #ffd700;
             text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
         }
 
         .input-group {
             display: flex;
-            gap: 20px; /* Increased gap */
-            margin-bottom: 20px; /* Increased margin */
+            gap: 15px;
+            margin-bottom: 20px;
         }
 
         input {
             flex: 1;
-            padding: 20px 30px; /* Larger padding */
+            padding: 18px 25px;
             border: none;
             border-radius: 15px;
             background: rgba(255, 255, 255, 0.15);
             color: white;
-            font-size: 1.3rem; /* Larger font */
+            font-size: 1.2rem;
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.15);
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
@@ -165,7 +161,7 @@
 
         input::placeholder {
             color: rgba(255, 255, 255, 0.7);
-            font-size: 1.2rem; /* Larger font */
+            font-size: 1.1rem;
         }
 
         input:focus {
@@ -177,54 +173,54 @@
 
         .btn {
             background: linear-gradient(135deg, #ffd700 0%, #ff9800 100%);
-            color: #0c3b2e;
+            color: #85db15;
             border: none;
-            padding: 20px 40px; /* Larger padding */
+            padding: 18px 35px;
             border-radius: 15px;
-            font-size: 1.4rem; /* Larger font */
+            font-size: 1.3rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px; /* Increased gap */
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            gap: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
             animation: buttonGlow 2s infinite alternate;
         }
 
         .btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 35px rgba(255, 215, 0, 0.9);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35), 0 0 30px rgba(255, 215, 0, 0.8);
             background: linear-gradient(135deg, #ffdf40 0%, #ffaa33 100%);
         }
 
         .btn:active {
             transform: translateY(2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         .btn i {
-            font-size: 1.5rem; /* Larger icon */
+            font-size: 1.4rem;
         }
 
         .names-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px; /* Increased gap */
-            margin-top: 30px; /* Increased margin */
+            gap: 15px;
+            margin-top: 25px;
         }
 
         .name-badge {
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 152, 0, 0.3) 100%);
-            padding: 15px 30px; /* Larger padding */
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.25) 0%, rgba(255, 152, 0, 0.25) 100%);
+            padding: 12px 25px;
             border-radius: 50px;
             display: flex;
             align-items: center;
-            gap: 15px; /* Increased gap */
-            font-size: 1.3rem; /* Larger font */
+            gap: 12px;
+            font-size: 1.2rem;
             backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 215, 0, 0.5);
+            border: 1px solid rgba(255, 215, 0, 0.4);
             animation: fadeIn 0.5s ease, badgeGlow 3s infinite alternate;
         }
 
@@ -232,68 +228,68 @@
             color: #ffd700;
             cursor: pointer;
             transition: transform 0.3s ease;
-            font-size: 1.2rem; /* Larger icon */
+            font-size: 1.1rem;
         }
 
         .name-badge i:hover {
-            transform: scale(1.4);
-            color: #ff6b6b;
+            transform: scale(1.3);
         }
 
         .actions {
             display: flex;
             justify-content: center;
-            gap: 30px; /* Increased gap */
-            margin-top: 50px; /* Increased margin */
+            gap: 25px;
+            margin-top: 40px;
         }
 
         .share-btn {
             background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
-            padding: 20px 50px; /* Larger padding */
-            font-size: 1.5rem; /* Larger font */
+            padding: 18px 45px;
+            font-size: 1.4rem;
         }
 
         .share-btn i {
-            font-size: 1.6rem; /* Larger icon */
+            font-size: 1.5rem;
         }
 
         .message {
             text-align: center;
-            font-size: 1.9rem; /* Larger font */
+            font-size: 1.7rem;
             line-height: 1.8;
-            margin: 50px 0; /* Increased margin */
+            margin: 40px 0;
             color: #e6e6e6;
-            text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+            text-shadow: 0 3px 6px rgba(0,0,0,0.4);
         }
 
         .highlight {
             color: #ffd700;
             font-weight: 700;
-            text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-            font-size: 2.1rem; /* Larger font */
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+            font-size: 2.5rem;
             animation: textGlow 3s infinite alternate;
             display: inline-block;
             margin: 10px 0;
+            text-decoration: underline;
         }
 
         .social-sharing {
             display: flex;
             justify-content: center;
-            gap: 30px; /* Increased gap */
-            margin-top: 50px; /* Increased margin */
+            gap: 25px;
+            margin-top: 40px;
         }
 
         .social-btn {
-            width: 80px; /* Larger size */
-            height: 80px; /* Larger size */
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem; /* Larger icon */
+            font-size: 2rem;
             color: white;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
             position: relative;
             overflow: hidden;
             animation: socialGlow 3s infinite alternate;
@@ -306,7 +302,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
             transform: translateY(100%);
             transition: transform 0.3s ease;
         }
@@ -316,8 +312,8 @@
         }
 
         .social-btn:hover {
-            transform: translateY(-10px) scale(1.2);
-            box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+            transform: translateY(-7px) scale(1.15);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
         }
 
         .whatsapp { background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); }
@@ -325,67 +321,65 @@
         .twitter { background: linear-gradient(135deg, #1da1f2 0%, #0d8abc 100%); }
 
         .link-container {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
-            padding: 25px; /* Larger padding */
-            margin-top: 40px; /* Increased margin */
+            padding: 20px;
+            margin-top: 30px;
             display: none;
             animation: fadeIn 1s ease;
         }
 
         .link-box {
             display: flex;
-            gap: 15px; /* Increased gap */
-            margin-top: 20px; /* Increased margin */
+            gap: 10px;
+            margin-top: 15px;
         }
 
         #generatedLink {
             flex: 1;
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 10px;
-            padding: 15px 20px; /* Larger padding */
+            padding: 12px 15px;
             color: #fff;
-            font-size: 1.3rem; /* Larger font */
+            font-size: 1.1rem;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
         #copyLink {
-            background: rgba(255, 215, 0, 0.4);
+            background: rgba(255, 215, 0, 0.3);
             color: #ffd700;
             border: none;
             border-radius: 10px;
-            padding: 0 25px; /* Larger padding */
+            padding: 0 20px;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 1.2rem;
         }
 
         #copyLink:hover {
-            background: rgba(255, 215, 0, 0.6);
-            transform: scale(1.05);
+            background: rgba(255, 215, 0, 0.5);
         }
 
         footer {
             text-align: center;
-            padding: 50px 0; /* Increased padding */
-            margin-top: 50px; /* Increased margin */
-            font-size: 1.2rem; /* Slightly larger */
-            color: rgba(255, 255, 255, 0.8);
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px 0;
+            margin-top: 40px;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
         }
 
         /* Animations */
         @keyframes pulse {
             0% { 
                 transform: scale(0.98); 
-                box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.8); 
+                box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); 
             }
             70% { 
                 transform: scale(1); 
-                box-shadow: 0 0 0 40px rgba(255, 215, 0, 0); 
+                box-shadow: 0 0 0 30px rgba(255, 215, 0, 0); 
             }
             100% { 
                 transform: scale(0.98); 
@@ -394,28 +388,28 @@
         }
 
         @keyframes glow {
-            0% { box-shadow: 0 0 80px rgba(255, 215, 0, 0.8); }
-            100% { box-shadow: 0 0 100px rgba(255, 215, 0, 1); }
+            0% { box-shadow: 0 0 60px rgba(255, 215, 0, 0.7); }
+            100% { box-shadow: 0 0 80px rgba(255, 215, 0, 0.9); }
         }
 
         @keyframes textGlow {
-            0% { text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); }
-            100% { text-shadow: 0 0 40px rgba(255, 215, 0, 1); }
+            0% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.7); }
+            100% { text-shadow: 0 0 30px rgba(255, 215, 0, 1); }
         }
 
         @keyframes buttonGlow {
-            0% { box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 215, 0, 0.5); }
-            100% { box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 35px rgba(255, 215, 0, 0.9); }
+            0% { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 0 10px rgba(255, 215, 0, 0.4); }
+            100% { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 0 25px rgba(255, 215, 0, 0.8); }
         }
 
         @keyframes badgeGlow {
-            0% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); }
-            100% { box-shadow: 0 0 30px rgba(255, 215, 0, 0.7); }
+            0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+            100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); }
         }
 
         @keyframes socialGlow {
-            0% { box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); }
-            100% { box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.8); }
+            0% { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); }
+            100% { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 0 20px rgba(255, 255, 255, 0.6); }
         }
 
         @keyframes fadeIn {
@@ -446,99 +440,94 @@
         .decoration {
             position: absolute;
             z-index: 1;
-            opacity: 0.9;
-            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9));
-            animation: float 6s ease-in-out infinite;
+            opacity: 0.8;
+            filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
         }
 
         .decoration-1 {
             top: 5%;
             left: 5%;
-            width: 80px; /* Larger size */
-            animation-duration: 7s;
+            width: 60px;
+            animation: float 6s ease-in-out infinite;
         }
 
         .decoration-2 {
             top: 15%;
             right: 5%;
-            width: 100px; /* Larger size */
-            animation-duration: 8s;
-            animation-delay: 1s;
+            width: 80px;
+            animation: float 8s ease-in-out infinite;
         }
 
         .decoration-3 {
             bottom: 15%;
             left: 8%;
-            width: 90px; /* Larger size */
-            animation-duration: 9s;
-            animation-delay: 2s;
+            width: 70px;
+            animation: float 7s ease-in-out infinite;
         }
 
         .decoration-4 {
             bottom: 10%;
             right: 7%;
-            width: 85px; /* Larger size */
-            animation-duration: 10s;
-            animation-delay: 3s;
+            width: 65px;
+            animation: float 9s ease-in-out infinite;
         }
 
         @keyframes float {
             0% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(15deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
             100% { transform: translateY(0) rotate(0deg); }
         }
 
         /* Responsive design */
-        @media (max-width: 1000px) {
+        @media (max-width: 900px) {
             .eid-image-container {
-                width: 480px;
-                height: 480px;
+                width: 400px;
+                height: 280px;
             }
+            h1 { font-size: 4.5rem; }
         }
         
         @media (max-width: 768px) {
-            h1 { font-size: 5rem; }
+            h1 { font-size: 4rem; }
             .eid-image-container { 
-                width: 400px; 
-                height: 400px; 
+                width: 350px; 
+                height: 250px; 
             }
-            .card { padding: 40px; }
+            .card { padding: 30px; }
             .input-group { flex-direction: column; }
             .actions { flex-direction: column; align-items: center; }
-            .message { font-size: 1.6rem; }
-            .subtitle { font-size: 1.7rem; }
-            .highlight { font-size: 1.8rem; }
+            .message { font-size: 1.5rem; }
+            .subtitle { font-size: 1.5rem; }
         }
 
         @media (max-width: 480px) {
-            h1 { font-size: 4rem; }
-            .subtitle { font-size: 1.4rem; }
-            .card { padding: 30px; }
+            h1 { font-size: 3.5rem; }
+            .subtitle { font-size: 1.3rem; }
+            .card { padding: 25px; }
             .btn { width: 100%; }
-            .social-sharing { gap: 20px; }
+            .social-sharing { gap: 15px; }
             .social-btn { 
-                width: 70px; 
-                height: 70px; 
-                font-size: 2.2rem; 
+                width: 60px; 
+                height: 60px; 
+                font-size: 1.8rem; 
             }
             .eid-image-container { 
-                width: 340px; 
-                height: 340px; 
-                border-width: 8px;
+                width: 550px; 
+                height: 400px; 
             }
-            .message { font-size: 1.4rem; }
-            .highlight { font-size: 1.6rem; }
+            .message { font-size: 1.3rem; }
+            .highlight { font-size: 2rem; }
             .decoration {
-                width: 50px;
+                display: none;
             }
         }
 
         @media (max-width: 400px) {
             .eid-image-container { 
-                width: 300px; 
-                height: 300px; 
+                width: 550px; 
+                height: 400px; 
             }
-            h1 { font-size: 3.5rem; }
+            h1 { font-size: 3rem; }
         }
     </style>
 </head>
@@ -558,8 +547,8 @@
     <div class="container">
         <header>
             <div class="eid-image-container">
-                <!-- Eid gif with higher resolution -->
-                <img src="Eid.gif" alt="Eid Mubarak" class="eid-gif">
+                <!-- Eid GIF -->
+                <img src="EID.gif" alt="Eid Mubarak" class="eid-image">
             </div>
             <h1>Eid al-Adha Mubarak</h1>
             <p class="subtitle">May this blessed occasion bring peace, happiness, and prosperity to your life</p>
@@ -588,13 +577,14 @@
                     <label>Share this personalized greeting:</label>
                     <div class="link-box">
                         <input type="text" id="generatedLink" readonly>
-                        <button id="copyLink"><i class="fas fa-copy"></i> Copy</button>
+                        <button id="copyLink"><i class="fas fa-copy"></i></button>
                     </div>
                 </div>
                 
                 <div class="message">
                     <p><span class="highlight" id="greetingNames">Everyone</span> aur aap sab ghar walon ko,</p>
-                    <p>Dil se mubarak ho Eid al-Adha! Allah aapko aur aapke family ko khushiyon se nawaze.</p>
+                    <p></p>Dil se mubarak ho Eid al-Adha! Allah aapko aur aapke family ko khushiyon se nawaze.</p>
+                    <p>Warm wishes for Eid al-Adha! May Allah bless you and your family with happiness.</p>
                 </div>
                 
                 <div class="actions">
@@ -821,7 +811,7 @@
                 greetingNames.textContent = names[0];
             } else {
                 const last = names.pop();
-                greetingNames.textContent = `${names.join(', ')} aur ${last}`;
+                greetingNames.textContent = `${names.join(', ')} and ${last}`;
                 names.push(last);
             }
         }
@@ -848,6 +838,13 @@
             // Trigger animations
             createFireworksBurst();
             createLightning();
+            
+            // Show confirmation
+            const originalText = generateLinkBtn.innerHTML;
+            generateLinkBtn.innerHTML = '<i class="fas fa-check"></i> Link Generated!';
+            setTimeout(() => {
+                generateLinkBtn.innerHTML = originalText;
+            }, 2000);
         }
         
         // Copy link to clipboard
@@ -880,7 +877,7 @@
                 return;
             }
             
-            const message = `Eid al-Adha Mubarak! ${greetingNames.textContent} aur aap sab ghar walon ko. May Allah accept your sacrifices and prayers.`;
+            const message = `Eid al-Adha Mubarak! ${greetingNames.textContent} and your entire family. May Allah accept your sacrifices and prayers.`;
             
             if (navigator.share) {
                 navigator.share({
@@ -895,7 +892,7 @@
         
         // Social media sharing
         function shareOnWhatsApp() {
-            const message = `Eid al-Adha Mubarak! ${greetingNames.textContent} aur aap sab ghar walon ko. May Allah accept your sacrifices and prayers. Share the joy: ${generatedLink.value || window.location.href}`;
+            const message = `Eid al-Adha Mubarak! ${greetingNames.textContent} and your entire family. May Allah accept your sacrifices and prayers. Share the joy: ${generatedLink.value || window.location.href}`;
             window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
         }
         
@@ -905,7 +902,7 @@
         }
         
         function shareOnTwitter() {
-            const message = `Eid al-Adha Mubarak! ${greetingNames.textContent} aur aap sab ghar walon ko. Share the joy: ${generatedLink.value || window.location.href}`;
+            const message = `Eid al-Adha Mubarak! ${greetingNames.textContent} and your entire family. Share the joy: ${generatedLink.value || window.location.href}`;
             window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}`, '_blank');
         }
         
@@ -938,11 +935,25 @@
                 createFireworksBurst();
             }, 1000);
             
-            // Add hover effect to the main card
-            const card = document.querySelector('.card');
-            card.addEventListener('mouseenter', () => {
-                createFireworksBurst();
-            });
+            // Check for names in URL on page load
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('names')) {
+                const namesParam = urlParams.get('names');
+                const namesArray = namesParam.split(',');
+                for (let i = 0; i < Math.min(namesArray.length, MAX_NAMES); i++) {
+                    const name = namesArray[i].trim();
+                    if (name && !names.includes(name)) {
+                        names.push(name);
+                    }
+                }
+                renderNames();
+                updateGreeting();
+                
+                // Special effect for personalized greeting
+                for (let i = 0; i < 5; i++) {
+                    setTimeout(createFireworksBurst, i * 500);
+                }
+            }
         });
     </script>
 </body>
