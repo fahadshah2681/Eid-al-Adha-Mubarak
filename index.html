@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Amiri', serif;
-            background: linear-gradient(135deg,rgb(26, 40, 168) 0%,rgb(78, 61, 233) 50%, #2deb2d 100%);
+            background: linear-gradient(135deg, rgb(26, 40, 168) 0%, rgb(78, 61, 233) 50%, #2deb2d 100%);
             color: #fff;
             min-height: 100vh;
             overflow-x: hidden;
@@ -64,7 +64,8 @@
 
         .eid-image-container {
             position: relative;
-            width: 540px;
+            width: 100%;
+            max-width: 540px;
             height: 400px;
             margin: 0 auto 40px;
             border-radius: 20px;
@@ -481,30 +482,32 @@
         /* Responsive design */
         @media (max-width: 900px) {
             .eid-image-container {
-                width: 400px;
-                height: 280px;
+                height: 300px;
             }
-            h1 { font-size: 4.5rem; }
+            h1 { font-size: 4rem; }
+            .subtitle { font-size: 1.6rem; }
+            .message { font-size: 1.5rem; }
+            .highlight { font-size: 2.2rem; }
         }
         
         @media (max-width: 768px) {
-            h1 { font-size: 4rem; }
+            h1 { font-size: 3.5rem; }
             .eid-image-container { 
-                width: 350px; 
                 height: 250px; 
             }
-            .card { padding: 30px; }
+            .card { padding: 25px; }
             .input-group { flex-direction: column; }
             .actions { flex-direction: column; align-items: center; }
-            .message { font-size: 1.5rem; }
-            .subtitle { font-size: 1.5rem; }
+            .message { font-size: 1.4rem; }
+            .subtitle { font-size: 1.4rem; }
+            .highlight { font-size: 2rem; }
+            .btn { padding: 15px 25px; font-size: 1.2rem; }
         }
 
-        @media (max-width: 480px) {
-            h1 { font-size: 3.5rem; }
+        @media (max-width: 600px) {
+            h1 { font-size: 3rem; }
             .subtitle { font-size: 1.3rem; }
-            .card { padding: 25px; }
-            .btn { width: 100%; }
+            .card { padding: 20px; }
             .social-sharing { gap: 15px; }
             .social-btn { 
                 width: 60px; 
@@ -512,22 +515,81 @@
                 font-size: 1.8rem; 
             }
             .eid-image-container { 
-                width: 550px; 
-                height: 400px; 
+                height: 200px; 
             }
             .message { font-size: 1.3rem; }
-            .highlight { font-size: 2rem; }
+            .highlight { font-size: 1.8rem; }
             .decoration {
                 display: none;
             }
         }
 
-        @media (max-width: 400px) {
-            .eid-image-container { 
-                width: 550px; 
-                height: 400px; 
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
             }
-            h1 { font-size: 3rem; }
+            header {
+                padding: 20px 0;
+            }
+            h1 { 
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+            .eid-image-container {
+                height: 180px;
+                margin-bottom: 20px;
+                border-width: 6px;
+            }
+            .card {
+                padding: 15px;
+                margin: 15px auto;
+            }
+            .form-group {
+                margin-bottom: 20px;
+            }
+            label {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+            input {
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+            .input-group {
+                gap: 10px;
+                margin-bottom: 15px;
+            }
+            .btn {
+                padding: 12px 20px;
+                font-size: 1.1rem;
+            }
+            .name-badge {
+                padding: 10px 15px;
+                font-size: 1rem;
+            }
+            .message {
+                font-size: 1.1rem;
+                margin: 20px 0;
+            }
+            .highlight {
+                font-size: 1.5rem;
+            }
+            .actions {
+                margin-top: 20px;
+            }
+            .social-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+            footer {
+                padding: 20px 0;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -552,6 +614,7 @@
             </div>
             <h1>Eid al-Adha Mubarak</h1>
             <p class="subtitle">May this blessed occasion bring peace, happiness, and prosperity to your life</p>
+            <p class="subtitle"> apna 10 friend ko send kary,Refer 10 of your friends</p>
         </header>
         
         <main>
@@ -583,7 +646,7 @@
                 
                 <div class="message">
                     <p><span class="highlight" id="greetingNames">Everyone</span> aur aap sab ghar walon ko,</p>
-                    <p></p>Dil se mubarak ho Eid al-Adha! Allah aapko aur aapke family ko khushiyon se nawaze.</p>
+                    <p>Dil se mubarak ho Eid al-Adha! Allah aapko aur aapke family ko khushiyon se nawaze.</p>
                     <p>Warm wishes for Eid al-Adha! May Allah bless you and your family with happiness.</p>
                 </div>
                 
